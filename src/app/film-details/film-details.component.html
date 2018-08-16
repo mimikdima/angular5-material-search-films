@@ -1,0 +1,29 @@
+<div class="film-desc" >
+
+<a id="back" routerLink="../../"><i class="material-icons">keyboard_backspace</i></a>
+
+  <div align="center">
+    <img *ngIf="hasPoster ; else defaultPoster" src="{{dataFilm.Poster}}" alt="{{dataFilm.Title}}" title="{{dataFilm.Title}}"  />
+     <ng-template #defaultPoster><img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" alt="{{dataFilm.Title}}" title="{{dataFilm.Title}}"  /></ng-template>
+  </div>
+  <br />{{dataFilm.Plot}}<br />
+  <br />
+  <u>Information about the film</u>
+  <br />
+  <b>Title:</b> {{dataFilm.Title}}
+  <br />
+  <b>Year:</b> {{dataFilm.Year}}
+  <br />
+  <b>Genre:</b> {{dataFilm.Genre}}
+  <br />
+  <b>Director:</b> {{dataFilm.Director}}
+  <br />
+  <b>Actors:</b> {{dataFilm.Actors}}
+  <br />
+  <b>IMDB Rating:</b> <span style="color:#FF0000">{{dataFilm.imdbRating}}</span>
+  <br />
+  <b>Awards:</b> {{dataFilm.Awards}}
+  <br />
+  <br />
+
+</div>

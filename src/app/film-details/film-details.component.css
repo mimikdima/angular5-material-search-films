@@ -1,0 +1,11 @@
+.film-desc{
+  font-family: tahoma, sans-serif;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  background-image: linear-gradient(to left, #80c6ff, #ffffff);
+  -moz-box-shadow: 0px 0px 69px 13px #4b3434;
+  -webkit-box-shadow:0px 0px 69px 13px #4b3434;
+  box-shadow: 0px 0px 69px 13px #4b3434;
+}

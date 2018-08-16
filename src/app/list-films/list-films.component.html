@@ -1,0 +1,6 @@
+<div >
+  <mat-list *ngFor=" let list of searchList;let i = index">
+    <mat-list-item ><a routerLink="/details/{{list.filmID}}" >{{list.name}}</a>  <p><i class="material-icons" (click)="deleteFromList(i)">delete</i></p></mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</div>
