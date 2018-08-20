@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconRegistry } from '@angular/material/icon';
 import { Router } from '@angular/router';
-import { ConfigService } from '../config.service';
+import { StatelessService } from '../stateless.service';
 
 @Component({
   selector: 'list-films',
@@ -15,8 +15,8 @@ export class ListFilmsComponent implements OnInit {
    searchList = [];
 
 
-  constructor( private router: Router, private configService:ConfigService ) {
-    this.searchList = this.configService.searchList;
+  constructor( private router: Router, private statelessService:StatelessService ) {
+    this.searchList = this.statelessService.searchList;
   }
 
   ngOnInit() {}
