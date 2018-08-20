@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MatFormFieldModule, MatInputModule, MatListModule,MatIconModule } from '@angular/material';
 
-import { ConfigService } from './config.service';
+import { StatelessService } from './stateless.service';
 import { AppComponent } from './app.component';
 import { FilmDetailsComponent } from './film-details/film-details.component';
 import { SearchComponent } from './search/search.component';
@@ -40,7 +40,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   exports: [RouterModule],
-  providers: [ConfigService],
+  providers: [StatelessService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
